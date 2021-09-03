@@ -18,5 +18,5 @@ strings.
 
 # How's Speed?
 Of course, running `strcmp` 100+ times every time the menu is drawn sounds  
-very CPU intensitive. From my experience, it has no noticible effect. It  
+very CPU intensive. From my experience, it has no noticible effect. It  
 feels just as snappy without it enabled. As for battery life, I'm not 100% sure.  
