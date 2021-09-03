@@ -1,0 +1,110 @@
+Prefs|
+Config options|
+Config auto save, manual save, restore defaults...|
+Image review settings|
+Misc key settings|
+Warning for bad settings|
+LV Display Presets|
+OFF (1)|
+Lens Info Prefs|
+Customize Menus|
+OFF|
+Display|
+LV DIGIC peaking|
+Focus peaking via DIGIC. No CPU usage!|
+OFF / Slightly sharper / Edge image / Edge + chroma.|
+This feature only works in LiveView.|
+LV brightness|
+Normal|
+LV contrast|
+LV saturation|
+LV display gain|
+Clear overlays|
+Defishing|
+Anamorphic|
+Advanced settings|
+Focus|
+Trap Focus|
+Takes a picture when the subject comes in focus. MF only.|
+DOF Settings|
+Shoot|
+Intervalometer|
+Take pictures at fixed intervals (for timelapse).|
+Shoot wide-open or unscrew lens to avoid aperture flicker.|
+Motion Detect|
+Flash Tweaks|
+Shoot Preferences|
+Movie|
+Bit Rate (CBR)|
+1.0x (default)|
+Change H.264 bitrate. Be careful, recording may stop!|
+This feature only works in movie mode.|
+REC key|
+Gradual Exposure|
+FPS override|
+HDR video|
+Vignetting|
+Image Fine-tuning|
+Creative Effects|
+Movie Tweaks|
+Overlay|
+Global Draw|
+ON, all modes|
+Enable/disable ML overlay graphics (zebra, cropmarks...)|
+OFF / LiveView / QuickReview / ON, all modes.|
+Zebras|
+LumaFast, over 99%|
+Focus Peak|
+Magic Zoom|
+Cropmarks|
+Ghost image|
+Spotmeter|
+Percent, AFbox|
+False color|
+Histogram|
+RAW N/A, Log|
+Waveform|
+Small|
+Vectorscope|
+Audio|
+Speaker Volume|
+Volume for ML beeps and WAV playback (1-5).|
+Beep, test tones|
+Modified|
+Modules debug|
+Diagnostic options for modules.|
+Load modules after crash|
+ON|
+Recent|
+Wireframe Cube|
+Simple Wireframe Demo|
+MLJS|
+Help|
+Press INFO|
+Context help|
+Press Q / PLAY|
+Open submenu|
+SET / |
+Edit values|
+Edit in LiveView|
+Press DISP|
+Shortcuts (LV only)|
+SET at startup|
+Bypass loading ML|
+Key Shortcuts|
+Complete user guide|
+About Magic Lantern|
+Debug|
+Memory patches|
+Show memory addresses patched in Canon code or data areas.|
+Show console|
+File Manager|
+Lens info|
+Screenshot - 10s|
+Dump ROM and RAM|
+Dump image buffers|
+Don't click me!|
+Show tasks|
+Modules|
+OK|
+Module loaded successfully. Press [Q] for more info.
