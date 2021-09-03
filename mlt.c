@@ -10,7 +10,7 @@
 CONFIG_INT("mlt.toload", mlt_toload, 1);
 
 /* Selected language to translate to */
-#define MLT_LANG "es"
+#define MLT_LANG "mlt_es"
 
 /* Expected to be bigger than bmp_puts input */
 #define MLT_MAX_STRING 128
@@ -23,7 +23,7 @@ char buffer[MLT_MAX_STRING];
 
 void translate(char output[], char input[])
 {
-    if (!strcmp(MLT_LANG, "en"))
+    if (!strcmp(MLT_LANG, "mlt_en"))
     {
         return;
     }
