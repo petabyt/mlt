@@ -1,18 +1,25 @@
-Prefs|Pref
-Config options|Opciones de configuracion
+# Basic Spanish translation for MLT. I'm pretty terrible at the
+# language, and most of the work was done by Google translate.
+# - Daniel C
+
+# TODO:
+# [ ] Compress the spanish text, to make it the similar length as english
+# [ ] Preserve accents, somewhere, somehow
+
+Config options|Opciones de config
 Config auto save, manual save, restore defaults...|Configurar guardado automatico, guardado manual, restaurar valores predeterminados...
-Image review settings|Configuracion de revision de imagenes
-Misc key settings|Configuracion de teclas miscelaneas
-Warning for bad settings|Advertencia por mala configuracion
+Image review settings|Config de revision de imagenes
+Misc key settings|Config de teclas misc
+Warning for bad settings|Advertencia por mala config
 LV Display Presets|Preajustes de pantalla LV
 OFF (1)|APAGADO (1)
-Lens Info Prefs|Preferencias de informacion de la lente
+Lens Info Prefs|Preferencias de info de la lente
 Customize Menus|Personalizar menus
 OFF|APAGADO
 Display|Monitor
 LV DIGIC peaking|Pico LV DIGIC
 Focus peaking via DIGIC. No CPU usage!|Enfoque pico a traves de DIGIC. Sin uso de CPU!
-OFF / Slightly sharper / Edge image / Edge + chroma.|DESACTIVADO / Ligeramente más nitido / Imagen de borde / Borde + croma.
+OFF / Slightly sharper / Edge image / Edge + chroma.|DESACTIVADO / Ligeramente mas nitido / Imagen de borde / Borde + croma.
 This feature only works in LiveView.|Esta funcion solo funciona en LiveView.
 LV brightness|Brillo LV
 Normal|Normal
@@ -26,18 +33,18 @@ Advanced settings|Ajustes avanzados
 Focus|Enfocar
 Trap Focus|Enfoque de trampa
 Takes a picture when the subject comes in focus. MF only.|Toma una fotografia cuando el sujeto esta enfocado. MF solamente.
-DOF Settings|Configuracion de DOF
+DOF Settings|Config de DOF
 Shoot|Disparo
 Intervalometer|Intervalometro
-Take pictures at fixed intervals (for timelapse).|Tome fotografias a intervalos fijos (para timelapse).
+Take pictures at fixed intervals (for timelapse).|Tome fotografias a intervalos fijos (para lapso de tiempo).
 Shoot wide-open or unscrew lens to avoid aperture flicker.|Dispare con el objetivo completamente abierto o desenrosque para evitar el parpadeo de la apertura.
 Motion Detect|Deteccion de movimiento
 Flash Tweaks|Ajustes de flash
-Shoot Preferences|Preferencias de disparo
+Shoot Preferences|Prefs de disparo
 Movie|Pelicula
 Bit Rate (CBR)|Tasa de bits (CBR)
-1.0x (default)|1.0x (predeterminado)
-Change H.264 bitrate. Be careful, recording may stop!|Cambie la tasa de bits H.264. Tenga cuidado, la grabacion puede detenerse!
+1.0x (default)|1.0x (normal)
+Change H.264 bitrate. Be careful, recording may stop!|Cambie la tasa de bits H.264. La grabacion puede detenerse!
 This feature only works in movie mode.|Esta funcion solo funciona en modo pelicula.
 REC key|Tecla REC
 Gradual Exposure|Exposicion gradual
@@ -81,7 +88,6 @@ Press INFO|Presione INFO
 Context help|Ayuda contextual
 Press Q / PLAY|Presione Q / PLAY
 Open submenu|Abrir submenu
-SET /|COLOCAR /
 Edit values|Editar valores
 Edit in LiveView|Editar en LiveView
 Press DISP|Presione DISP
@@ -93,17 +99,20 @@ Complete user guide|Guia de usuario completa
 About Magic Lantern|Acerca de Magic Lantern
 Debug|Depurar
 Memory patches|Parches de memoria
-Show memory addresses patched in Canon code or data areas.|Muestra direcciones de memoria parcheadas en codigo Canon o áreas de datos.
+Show memory addresses patched in Canon code or data areas.|Muestra direcciones de memoria parcheadas en codigo Canon o areas de datos.
 Show console|Muestra la consola
 File Manager|Administrador de archivos
-Lens info|Informacion de la lente
+Lens info|Info de la lente
 Screenshot - 10s|Captura de pantalla: 10 s
 Dump ROM and RAM|Volcar ROM y RAM
 Dump image buffers|Volcar buferes de imagen
-Don't click me!|¡No me hagas clic!
+Don't click me!|No me hagas clic!
 Show tasks|Mostrar tareas
 Modules|Modulos
-OK|OK
-Module loaded successfully. Press [Q] for more info.|Modulo cargado correctamente. Presione [Q] para obtener más informacion.
-
-
+Module loaded successfully. Press [Q] for more info.|Modulo cargado. Presione [Q] para obtener mas info.
+Module disabled. Press [Q] for more info.|Módulo desactivado. Presione [Q] para obtener mas info.
+Show CPU usage|Mostrar el uso de la CPU
+Show GUI events|Mostrar eventos de GUI
+Free Memory|Memoria Libre
+Shutter Count|Numero de Disparos
+Internal Temp|Temperatura Interna 
