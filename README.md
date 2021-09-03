@@ -15,3 +15,8 @@ strings.
 - [x] Hijack the `bmp_printf` function from a module, not from source code.
 - [ ] Use a decent format, not `|` and `\n`.
 - [ ] Case insensitive string searching (possibly ignore symbols too)
+
+# How's Speed?
+Of course, running `strcmp` 100+ times every time the menu is drawn sounds  
+very CPU intensitive. From my experience, it has no noticible effect. It  
+feels just as snappy without it enabled. As for battery life, I'm not 100% sure.  
