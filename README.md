@@ -20,6 +20,7 @@ strings.
 - [ ] Use a decent format, not `|` and `\n`.
 - [ ] Case insensitive string searching (possibly ignore symbols too)
 - [ ] "Translate" parts of a string, ignoring generated parts
+- [ ] Convert accent mark characters to normal ('ñ' -> 'n') until UTF-8 is supported
 
 ## How's Speed?
 Of course, running `strcmp` 100+ times every time the menu is drawn sounds  
