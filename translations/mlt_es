@@ -1,11 +1,6 @@
 # Basic Spanish translation for MLT. I'm pretty terrible at the
 # language, and most of the work was done by Google translate.
 # - Daniel C
-
-# TODO:
-# [ ] Compress the spanish text, to make it the similar length as english
-# [ ] Preserve accents, somewhere, somehow
-
 Config options|Opciones de config
 Config auto save, manual save, restore defaults...|Configurar guardado automatico, guardado manual, restaurar valores predeterminados...
 Image review settings|Config de revision de imagenes
