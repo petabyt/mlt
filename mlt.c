@@ -97,8 +97,11 @@ void translate(char output[], char input[])
     strcpy(output, input);
 }
 
+void foobar(int a, char str[], int x, int y);
+
 void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
 {
+    //regs[0] = FONT_CANON;
     translate(buffer, (char*)regs[3]);
     regs[3] = (uint32_t)buffer;
 }
@@ -108,10 +111,17 @@ static void translate_task()
     /* ... */
 }
 
+int mlt_selection = 0;
+
+static void set_language(void* priv, int delta)
+{
+    mlt_selection = MOD(mlt_selection + delta, 3);
+}
+
 static struct menu_entry translate_menu[] =
 {
     {
-        .name = "Magic Lantern Translation",
+        .name = "Set MLT Language",
         .select = menu_open_submenu,
         .submenu_width = 700,
         .help = "Language / Idioma / Langue / Sprache",
@@ -122,30 +132,47 @@ static struct menu_entry translate_menu[] =
                 .priv = &mlt_toload,
                 .max = 1,
                 .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
+                .help2 = "Changes take effect after a restart."
+            },
+            {
+                .name = "Select Language...",
+                .priv = &mlt_selection,
+                .choices = (const char *[])
+                {
+                    "Spanish",
+                    "French",
+                    "German"
+                },
+                .icon_type = IT_DICE,
+                .max = 3,
+                .select = set_language,
+                .help = "Language / Idioma / Langue / Sprache",
             },
             MENU_EOL,
         },
     },
 };
 
+
 static unsigned int translate_init()
 {
-    menu_add("Help", translate_menu, COUNT(translate_menu));
+    menu_add("Prefs", translate_menu, COUNT(translate_menu));
 
     if (mlt_toload)
     {
         char file[8] = "ML/";
         strcat(file, MLT_LANG);
 
-        FIO_GetFileSize(file, &size);
-        current_translation = fio_malloc(size);
-
         FILE *f = FIO_OpenFile(file, O_RDWR | O_SYNC);
         if (!f)
         {
             printf("MLT Could not find ML/%s!\n", MLT_LANG);
+            bmp_printf(FONT_MED, 10, 10, "!! MLT Load Fail");
             return 0;
         }
+
+        FIO_GetFileSize(file, &size);
+        current_translation = fio_malloc(size);
 
         FIO_ReadFile(f, current_translation, size);
 
@@ -153,6 +180,15 @@ static unsigned int translate_init()
         uint32_t *func = (uint32_t*)bmp_puts;
         patch_hook_function((uintptr_t)bmp_puts, *func, hijack, "Translation patch");
     }
+
+    char asd[1000];
+    for (int i = 120; i < 300; i++)
+    {
+        asd[i - 120] = i;
+    }
+
+    bmp_printf(FONT_MED, 10, 10, asd);
+    while (1);
 
     return 0;
 }
