@@ -1,0 +1,111 @@
+# mlt_es con los accentos
+Config options|Opciones de config
+Config auto save, manual save, restore defaults...|Configurar guardado automatico, guardado manual, restaurar valores predeterminados...
+Image review settings|Config de revision de imagenes
+Misc key settings|Config de teclas misc
+Warning for bad settings|Advertencia por mala config
+LV Display Presets|Preajustes de pantalla LV
+OFF (1)|APAGADO (1)
+Lens Info Prefs|Preferencias de info de la lente
+Customize Menus|Personalizar menus
+OFF|APAGADO
+Display|Monitor
+LV DIGIC peaking|Pico LV DIGIC
+Focus peaking via DIGIC. No CPU usage!|Enfoque pico a traves de DIGIC. ¡Sin uso de CPU!
+OFF / Slightly sharper / Edge image / Edge + chroma.|DESACTIVADO / Ligeramente mas nitido / Imagen de borde / Borde + croma.
+This feature only works in LiveView.|Esta funcion solo funciona en LiveView.
+LV brightness|Brillo LV
+Normal|Normal
+LV contrast|Contraste LV
+LV saturation|Saturacion del VI
+LV display gain|Ganancia de pantalla LV
+Clear overlays|Superposiciones claras
+Defishing|Desafiante
+Anamorphic|Anamorfico
+Advanced settings|Ajustes avanzados
+Focus|Enfocar
+Trap Focus|Enfoque de trampa
+Takes a picture when the subject comes in focus. MF only.|Toma una fotografía cuando el sujeto está enfocado. MF solamente.
+DOF Settings|Config de DOF
+Shoot|Disparo
+Intervalometer|Intervalometro
+Take pictures at fixed intervals (for timelapse).|Tome fotografías a intervalos fijos (para lapso de tiempo).
+Shoot wide-open or unscrew lens to avoid aperture flicker.|Dispare con el objetivo completamente abierto o desenrosque para evitar el parpadeo de la apertura.
+Motion Detect|Detección de movimiento
+Flash Tweaks|Ajustes de flash
+Shoot Preferences|Prefs de disparo
+Movie|Pelicula
+Bit Rate (CBR)|Tasa de bits (CBR)
+1.0x (default)|1.0x (normal)
+Change H.264 bitrate. Be careful, recording may stop!|Cambie la tasa de bits H.264. La grabación puede detenerse!
+This feature only works in movie mode.|Esta función sólo funciona en modo película.
+REC key|Tecla REC
+Gradual Exposure|Exposicion gradual
+FPS override|Anulacion de FPS
+HDR video|Video HDR
+Vignetting|Vineteado
+Image Fine-tuning|Ajuste de imagen
+Creative Effects|Efectos creativos
+Movie Tweaks|Ajustes de película
+Overlay|Cubrir
+Global Draw|Sorteo global
+ON, all modes|ON, todos los modos
+Enable/disable ML overlay graphics (zebra, cropmarks...)|Activar / desactivar gráficos de superposición ML (cebra, marcas de recorte ...)
+OFF / LiveView / QuickReview / ON, all modes.|OFF / LiveView / QuickReview / ON, todos los modos.
+Zebras|Cebras
+LumaFast, over 99%|LumaFast, mas del 99%
+Focus Peak|Pico de enfoque
+Magic Zoom|Zoom magico
+Cropmarks|Marcas de corte
+Ghost image|Imagen fantasma
+Spotmeter|Spotmeter
+Percent, AFbox|Porcentaje, AFbox
+False color|Color falso
+Histogram|Histograma
+RAW N/A, Log|RAW N / A, registro
+Waveform|Forma de onda
+Small|Pequena
+Vectorscope|Vectorescopio
+Audio|Audio
+Speaker Volume|Volumen del altavoz
+Volume for ML beeps and WAV playback (1-5).|Volumen para los pitidos ML y la reproducción WAV (1-5).
+Beep, test tones|Bip, tonos de prueba
+Modified|Modificado
+Modules debug|Depuración de módulos
+Diagnostic options for modules.|Opciones de diagnóstico para módulos.
+Load modules after crash|Cargar modulos después de la caída
+ON|ENCENDIDO
+Recent|Reciente
+Help|Ayudar
+Press INFO|Presione INFO
+Context help|Ayuda contextual
+Press Q / PLAY|Presione Q / PLAY
+Open submenu|Abrir submenu
+Edit values|Editar valores
+Edit in LiveView|Editar en LiveView
+Press DISP|Presione DISP
+Shortcuts (LV only)|Atajos (solo LV)
+SET at startup|SET al inicio
+Bypass loading ML|Omitir carga de ML
+Key Shortcuts|Atajos de teclas
+Complete user guide|Guia de usuario completa
+About Magic Lantern|Acerca de Magic Lantern
+Debug|Depurar
+Memory patches|Parches de memoria
+Show memory addresses patched in Canon code or data áreas.|Muestra direcciones de memoria parcheadas en código Canon o áreas de datos.
+Show console|Muestra la consola
+File Manager|Administrador de archivos
+Lens info|Info de la lente
+Screenshot - 10s|Captura de pantalla: 10 s
+Dump ROM and RAM|Volcar ROM y RAM
+Dump image buffers|Volcar búferes de imagen
+Don't click me!|¡No me hagas clic!
+Show tasks|Mostrar tareas
+Modules|Modulos
+Module loaded successfully. Press [Q] for more info.|Modulo cargado. Presione [Q] para obtener mas info.
+Module disabled. Press [Q] for more info.|Módulo desactivado. Presione [Q] para obtener más info.
+Show CPU usage|Mostrar el uso de la CPU
+Show GUI events|Mostrar eventos de GUI
+Free Memory|Memoria Libre
+Shutter Count|Numero de Disparos
+Internal Temp|Temperatura Interna
