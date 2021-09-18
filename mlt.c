@@ -8,14 +8,35 @@
 #include <string.h>
 
 CONFIG_INT("mlt.toload", mlt_toload, 1);
+int mlt_selection = 0;
 
-/* Selected language to translate to */
+/* If the module should be standalone. Will read
+* from compiled language file temp.h */
+//#define STANDALONE
+
+#ifdef STANDALONE
+#warning "MLT is being compiled standalone."
+#include "temp.h"
+#endif
+
+#ifndef STANDALONE
+char *current_translation = 0;
+#endif
+
+/* For menu items */
+#define MLT_LANGID "es", "af", "de"
+#define MLT_LANGS "Espanol", "Francas", "German"
+#define MLT_NLANGS 3
+
+/* Selected language to translate to
+* TODO: use selected translation in menu*/
+#ifndef MLT_LANG
 #define MLT_LANG "mlt_es"
+#endif
 
 /* Expected to be bigger than bmp_puts input */
 #define MLT_MAX_STRING 128
 
-char *current_translation = 0;
 int no_file = 0;
 uint32_t size = 0;
 
@@ -23,11 +44,6 @@ char buffer[MLT_MAX_STRING];
 
 void translate(char output[], char input[])
 {
-    if (!strcmp(MLT_LANG, "mlt_en"))
-    {
-        return;
-    }
-
     if (current_translation == 0)
     {
         return;
@@ -97,13 +113,13 @@ void translate(char output[], char input[])
     strcpy(output, input);
 }
 
-void foobar(int a, char str[], int x, int y);
-
 void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
 {
-    //regs[0] = FONT_CANON;
-    translate(buffer, (char*)regs[3]);
-    regs[3] = (uint32_t)buffer;
+    if (mlt_toload)
+    {
+        translate(buffer, (char*)regs[3]);
+        regs[3] = (uint32_t)buffer;
+    }
 }
 
 static void translate_task()
@@ -111,17 +127,15 @@ static void translate_task()
     /* ... */
 }
 
-int mlt_selection = 0;
-
 static void set_language(void* priv, int delta)
 {
-    mlt_selection = MOD(mlt_selection + delta, 3);
+    mlt_selection = MOD(mlt_selection + delta, MLT_NLANGS);
 }
 
 static struct menu_entry translate_menu[] =
 {
     {
-        .name = "Set MLT Language",
+        .name = "MLT Settings",
         .select = menu_open_submenu,
         .submenu_width = 700,
         .help = "Language / Idioma / Langue / Sprache",
@@ -132,22 +146,21 @@ static struct menu_entry translate_menu[] =
                 .priv = &mlt_toload,
                 .max = 1,
                 .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
-                .help2 = "Changes take effect after a restart."
             },
+#ifndef STANDALONE
             {
                 .name = "Select Language...",
                 .priv = &mlt_selection,
                 .choices = (const char *[])
                 {
-                    "Spanish",
-                    "French",
-                    "German"
+                    MLT_LANGS
                 },
                 .icon_type = IT_DICE,
-                .max = 3,
+                .max = MLT_NLANGS,
                 .select = set_language,
                 .help = "Language / Idioma / Langue / Sprache",
             },
+#endif
             MENU_EOL,
         },
     },
@@ -160,6 +173,7 @@ static unsigned int translate_init()
 
     if (mlt_toload)
     {
+#ifndef STANDALONE
         char file[8] = "ML/";
         strcat(file, MLT_LANG);
 
@@ -167,7 +181,7 @@ static unsigned int translate_init()
         if (!f)
         {
             printf("MLT Could not find ML/%s!\n", MLT_LANG);
-            bmp_printf(FONT_MED, 10, 10, "!! MLT Load Fail");
+            bmp_printf(FONT_MED, 10, 10, "!! MLT Load Fail - No 'ML/%s' file.", MLT_LANG);
             return 0;
         }
 
@@ -175,20 +189,17 @@ static unsigned int translate_init()
         current_translation = fio_malloc(size);
 
         FIO_ReadFile(f, current_translation, size);
+#endif
 
+#ifdef STANDALONE
+        size = sizeof(current_translation);
+#endif
+
+        //bmp_printf(FONT_MED, 10, 10, current_translation);
         printf("Applying bmp_puts translation patch...\n");
         uint32_t *func = (uint32_t*)bmp_puts;
         patch_hook_function((uintptr_t)bmp_puts, *func, hijack, "Translation patch");
     }
-
-    char asd[1000];
-    for (int i = 120; i < 300; i++)
-    {
-        asd[i - 120] = i;
-    }
-
-    bmp_printf(FONT_MED, 10, 10, asd);
-    while (1);
 
     return 0;
 }
