@@ -15,7 +15,6 @@ int mlt_selection = 0;
 //#define STANDALONE
 
 #ifdef STANDALONE
-#warning "MLT is being compiled standalone."
 #include "temp.h"
 #endif
 
@@ -113,13 +112,42 @@ void translate(char output[], char input[])
     strcpy(output, input);
 }
 
+// Dump menu entries into a file, for logging
+// into a translation file (for use with emulator)
+//#define DUMPER
+
+#ifdef DUMPER
+FILE *dump = NULL;
+int done = 0;
+#endif
+
 void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
 {
+#ifndef DUMPER
     if (mlt_toload)
     {
         translate(buffer, (char*)regs[3]);
         regs[3] = (uint32_t)buffer;
     }
+#endif
+
+#ifdef DUMPER
+    if (done) return;
+    if (dump == NULL)
+    {
+        dump = FIO_OpenFile("dump", O_RDWR | O_SYNC);
+    }
+
+    printf("Writing %s", regs[3]);
+    FIO_WriteFile(dump, (char*)regs[3], strlen((char*)regs[3]));
+    FIO_WriteFile(dump, "\n", 1);
+
+    if (!strcmp(regs[3], "Status"))
+    {
+        FIO_CloseFile(dump);
+        done = 1;
+    }
+#endif
 }
 
 static void translate_task()
