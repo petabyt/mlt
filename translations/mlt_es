@@ -5,7 +5,6 @@
 (none)|(ninguno)
 -16px / -8px / Normal / +8px / +16px.|-16px / -8px / Normal / + 8px / + 16px.
 0 (here)|0 (aqui)
-1 (OFF)|1 (APAGADO)
 1 EV / 128 frames|1 EV / 128 cuadros
 1 EV / 16 frames|1 EV / 16 cuadros
 1 EV / 256 frames|1 EV / 256 cuadros
@@ -16,14 +15,8 @@
 1 EV / 8 frames / 1 EV / 16 frames / 1 EV / 32 frames / 1 EV / 64 frames / |1 EV / 8 cuadros / 1 EV / 16 cuadros / 1 EV / 32 cuadros / 1 EV / 64 cuadros /
 1.0x (default)|1.0x (predeterminado)
 1.0x = Canon default, 0.4x = 30minutes, 1.4x = fast card.|1.0x = valor predeterminado de Canon, 0.4x = 30 minutos, 1.4x = tarjeta rapida.
-16"|dieciseis"
-16:10 HDMI,t/b|16:10 HDMI, t / b
-16:9  HDMI,t/b|16: 9 HDMI, t / b
-18K = 10622+7627|18K = 10622 + 7627
 1:1 displays recorded pixels, 2:1 displays them doubled.|1: 1 muestra los pixeles grabados, 2: 1 los muestra duplicados.
 2.500 (from 0)|2.500 (desde 0)
-26 C, 78 F, 152 raw|26 deg C, 78 deg F, 152 crudo
-3rd p. flash LV|3a p. flash LV
 4:3 display,auto|Pantalla 4: 3, automatico
 4:3 display,auto / 16:10 HDMI,t/b / 16:9  HDMI,t/b / Bottom,under 3:2 / |Pantalla 4: 3, automatico / 16:10 HDMI, t / b / 16: 9 HDMI, t / b / Inferior, por debajo de 3: 2 /
 => adjust ISO, shutter speed and aperture without large jumps.|=> ajusta ISO, velocidad de obturacion y apertura sin grandes saltos.
@@ -65,9 +58,6 @@ Auto exposure algorithm.|Algoritmo de exposicion automatica.
 Auto-restart movie recording, if it happens to stop.|Reiniciar automaticamente la grabacion de peliculas, si se detiene.
 Auto-update|Actualizacion automatica
 Autofocus, number of pics to take at once...|Enfoque automatico, numero de fotos para tomar a la vez ...
-Av  -> |Av ->
-Av,ISO|Aviso
-Av,Tv|Av, Tv
 B multiplier|Multiplicador B
 BLUE channel multiplier, for custom white balance.|Multiplicador de canal AZUL, para un balance de blancos personalizado.
 Back to 'beginner' mode.|Volver al modo "principiante".
@@ -111,7 +101,6 @@ Circle of confusion used for DOF calculations.|Circulo de confusion utilizado pa
 Clear bitmap overlays from LiveView display.|Borre las superposiciones de mapas de bits de la pantalla LiveView.
 Clear overlays|Superposiciones claras
 Clip warning|Advertencia de clip
-Code: C8F21C|Codigo: C8F21C
 Color Tone|Tono de color
 Color scheme|Esquema de colores
 Color scheme for bitmap overlays (ML menus, Canon menus...)|Esquema de color para superposiciones de mapas de bits (menus ML, menus Canon ...)
@@ -126,7 +115,7 @@ Configure ML beeps and play test tones (440Hz, 1kHz...)|Configurar pitidos ML y 
 Constant expo|Exposicion constante
 Context help|Ayuda contextual
 Contrast|Contraste
-Corner correction        |Correccion de esquina
+Corner correction        |Correccion de esquina        
 Correction applied between central area and corners.|Correccion aplicada entre zona central y esquinas.
 Correction with a stronger bias towards corners.|Correccion con un sesgo mas fuerte hacia las esquinas.
 Crazy color effects that may help with white balance.|Efectos de color locos que pueden ayudar con el balance de blancos.
@@ -366,7 +355,6 @@ MLT Settings|Configuracion de MLT
 MLT Settings - Status|Configuracion de MLT - Estado
 MLV Player|Jugador de MLV
 Magic Lantern help files could not be found.              |No se pudieron encontrar los archivos de ayuda de Magic Lantern.
-Magic Lantern version : Nightly.2021Sep07.1300D110|Version de linterna magica: Nightly.2021Sep07.1300D110
 Magic Zoom|Zoom magico
 Magic Zoom is disabled.|Magic Zoom esta desactivado.
 Magnification|Aumento
@@ -378,7 +366,6 @@ May make the image easier to see from difficult angles.|Puede hacer que la image
 Measurement unit for brightness level(s).|Unidad de medida para los niveles de brillo.
 Medium|Medio
 Memory patches|Parches de memoria
-Mercurial changeset   : 788eff4f6400 (1300D) tip|Conjunto de cambios Mercurial: punta 788eff4f6400 (1300D)
 Mid-range correction     |Correccion de rango medio
 Misc  - DigitalZoom Shortcut|Misc - Atajo de DigitalZoom
 Misc key settings|Configuracion de teclas miscelaneas
@@ -402,34 +389,32 @@ Movie: DISP + Zoom In toggles between 1x and 3x modes.|Pelicula: DISP + Zoom In 
 Name|Nombre
 Negative|Negativo
 Negative image. Inverts all colors :)|Imagen negativa. Invierte todos los colores :)
-Nightly.2021Jun15.1300D110|Todas las noches.2021Jun15.1300D110
 Normal / High / Very high.|Normal / Alto / Muy alto.
 Num. of LV display presets. Switch with DISP or from LiveV.|Num. de ajustes preestablecidos de pantalla LV. Cambie con DISP o desde LiveV.
 Num. of LV display presets. Switch with INFO or from LiveV.|Num. de ajustes preestablecidos de pantalla LV. Cambie con INFO o desde LiveV.
 Number of pics taken + number of LiveView actuations|Numero de fotografias tomadas + numero de actuaciones LiveView
 Numbers represent the percentage of pixels clipped.|Los numeros representan el porcentaje de pixeles recortados.
-OFF|APAGADO
-OFF (1)|APAGADO (1)
-OFF (1) / 2 / 3 / 4.|APAGADO (1) / 2/3/4.
-OFF / 5:4 (1.25) / 4:3 (1.33) / 7:5 (1.4) / 3:2 (1.5) / 5:3 (1.66) / 9:5 (1.8) / |APAGADO / 5: 4 (1.25) / 4: 3 (1.33) / 7: 5 (1.4) / 3: 2 (1.5) / 5: 3 (1.66) / 9: 5 (1.8) /
-OFF / Av,ISO / ISO,Av.|APAGADO / Av, ISO / ISO, Av.
-OFF / Elapsed / Remain.Card / Remain.4GB.|APAGADO / Transcurrido / Tarjeta restante / Restante 4GB.
-OFF / Exposure Fusion / Compare Images / Timelapse Play / Exposure Adjust.|APAGADO / Fusion de exposicion / Comparar imagenes / Reproduccion a intervalos / Ajuste de exposicion.
+OFF|OFF
+OFF (1) / 2 / 3 / 4.|OFF (1) / 2/3/4.
+OFF / 5:4 (1.25) / 4:3 (1.33) / 7:5 (1.4) / 3:2 (1.5) / 5:3 (1.66) / 9:5 (1.8) / |OFF / 5: 4 (1.25) / 4: 3 (1.33) / 7: 5 (1.4) / 3: 2 (1.5) / 5: 3 (1.66) / 9: 5 (1.8) /
+OFF / Av,ISO / ISO,Av.|OFF / Av, ISO / ISO, Av.
+OFF / Elapsed / Remain.Card / Remain.4GB.|OFF / Transcurrido / Tarjeta restante / Restante 4GB.
+OFF / Exposure Fusion / Compare Images / Timelapse Play / Exposure Adjust.|OFF / Fusion de exposicion / Comparar imagenes / Reproduccion a intervalos / Ajuste de exposicion.
 OFF / LiveView / QuickReview / ON, all modes.|OFF / LiveView / QuickReview / ON, todos los modos.
-OFF / Mode 1 / Mode 2 / Mode 3.|APAGADO / Modo 1 / Modo 2 / Modo 3.
+OFF / Mode 1 / Mode 2 / Mode 3.|OFF / Modo 1 / Modo 2 / Modo 3.
 OFF / ON (fast zoom) / SinglePress -> 100% / Full zoom on AF pt. / |OFF / ON (zoom rapido) / SinglePress -> 100% / Zoom completo en AF pt. /
-OFF / Percentage / Busy tasks (ABS) / Busy tasks (REL).|APAGADO / Porcentaje / Tareas ocupadas (ABS) / Tareas ocupadas (REL).
+OFF / Percentage / Busy tasks (ABS) / Busy tasks (REL).|OFF / Porcentaje / Tareas ocupadas (ABS) / Tareas ocupadas (REL).
 OFF / Press SET / Press DISP.|OFF / Presione SET / Presione DISP.
-OFF / Rectilinear / Panini.|APAGADO / Rectilineo / Panini.
+OFF / Rectilinear / Panini.|OFF / Rectilineo / Panini.
 OFF / Red Crossout / REC/STBY.|OFF / Red Crossout / REC / STBY.
 OFF / Slightly sharper / Edge image / Edge + chroma.|DESACTIVADO / Ligeramente mas nitido / Imagen de borde / Borde + croma.
-OFF / Startup mode / Startup key / Preset 1    / Preset 2    / Preset 3    / |APAGADO / Modo de inicio / Tecla de inicio / Preajuste 1 / Preajuste 2 / Preajuste 3 /
-OFF / Startup mode / Startup key.|APAGADO / Modo de inicio / Tecla de inicio.
-OFF / Tv,Av / Av,Tv.|APAGADO / Tv, Av / Av, Tv.
-OFF / Tv,ISO / ISO,Tv.|APAGADO / Tv, ISO / ISO, Tv.
-OFF / other than AF / other than MF.|APAGADO / distinto de AF / distinto de MF.
-OFF / other than M / other than Av / other than Tv / other than P.|APAGADO / distinto de M / distinto de Av / distinto de Tv / distinto de P.
-OFF / other than RAW / other than fine.|APAGADO / distinto de RAW / distinto de fino.
+OFF / Startup mode / Startup key / Preset 1    / Preset 2    / Preset 3    / |OFF / Modo de inicio / Tecla de inicio / Preajuste 1 / Preajuste 2 / Preajuste 3 /
+OFF / Startup mode / Startup key.|OFF / Modo de inicio / Tecla de inicio.
+OFF / Tv,Av / Av,Tv.|OFF / Tv, Av / Av, Tv.
+OFF / Tv,ISO / ISO,Tv.|OFF / Tv, ISO / ISO, Tv.
+OFF / other than AF / other than MF.|OFF / distinto de AF / distinto de MF.
+OFF / other than M / other than Av / other than Tv / other than P.|OFF / distinto de M / distinto de Av / distinto de Tv / distinto de P.
+OFF / other than RAW / other than fine.|OFF / distinto de RAW / distinto de fino.
 ON|SOBRE
 ON (1s)|ACTIVADO (1 s)
 ON (fast zoom)|ACTIVADO (zoom rapido)
@@ -502,9 +487,8 @@ Require long press|Requiere una pulsacion larga
 Required to load ML|Requerido para cargar ML
 Restore ML defaults|Restaurar valores predeterminados de AA
 Rolling shutter|Persiana
-SET / |COLOCAR /
 SET at startup|SET al inicio
-SET+Erase|SET + Borrar
+SET+Erase|SET+Borrar
 Saturation|Saturacion
 Save ML settings to current preset directory.|Guarde la configuracion de ML en el directorio preestablecido actual.
 Save config now|Guardar configuracion ahora
@@ -622,10 +606,6 @@ Trigger by|Activar por
 Trigger key(s)|Llave (s) de activacion
 Trigger level|Nivel de disparo
 Trigger mode|Modo de disparo
-Tv  -> |Television ->
-Tv,Av|Tv, Av
-Tv,ISO|Tv, ISO
-Tv-4.0|Television 4.0
 Type of waveform to be generated: square, sine, white noise.|Tipo de forma de onda a generar: cuadrada, sinusoidal, ruido blanco.
 Update the overlay whenever you take a picture.|Actualice la superposicion cada vez que tome una foto.
 UpsideDown mode|Modo al reves
@@ -638,8 +618,6 @@ Vignetting|Vineteado
 Vignetting correction or effects.|Correccion o efectos de vineteado.
 Volume for ML beeps and WAV playback (1-5).|Volumen para los pitidos ML y la reproduccion WAV (1-5).
 WB warning|Advertencia de WB
-WBShift B/A|WBShift B / A
-WBShift G/M|WBShift G / M
 Warn if some of your settings are changed by mistake.|Advierte si algunos de tus ajustes se cambian por error.
 Warn if you change the picture quality to something else.|Advertir si cambia la calidad de la imagen a otra.
 Warn if you disable AWB by mistake.|Advertir si desactiva AWB por error.
@@ -677,16 +655,14 @@ Zoom.REC / Focus+ZREC / ZoomIn (+) / Always On.|Zoom.REC / Focus + ZREC / ZoomIn
 [GLOBAL] If you hold the SET button pressed at camera startup:|[GLOBAL] Si mantiene presionado el boton SET durante el inicio de la camara:
 [PHOTO] Set picture quality to RAW in Canon menu.|[FOTO] Establece la calidad de la imagen en RAW en el menu Canon.
 [Q]: fix here rack end point. SET+L/R: start point.|[Q]: fije aqui el punto final del bastidor. SET + L / R: punto de inicio.
-arkanoid|Arkanoid
 custom modes|modos personalizados
 ft/in|pies / pulg
-mm/cm|mm / cm
 other than AF|que no sea AF
 other than AWB|que no sea AWB
 other than Av|que no sea Av
 other than M|que no sea M
 other than MF|que no sea MF
-other than OFF|que no sea APAGADO
+other than OFF|que no sea OFF
 other than P|que no sea P
 other than RAW|que no sea RAW
 other than Tv|que no sea Tv
