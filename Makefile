@@ -9,6 +9,9 @@ endif
 
 _B := $(shell astyle --style=allman mlt.c; rm -rf *.orig)
 
+MCUFONT=$(shell ls mcufont/decoder/*.c | sed 's/\.c/\.o/g')
+MODULE_CFLAGS+=-Imcufont/fonts/ -Imcufont/decoder/
+
 MODULE_NAME=mlt
-MODULE_OBJS=mlt.o
+MODULE_OBJS=mlt.o mcu.o $(MCUFONT)
 include ../../modules/Makefile.modules
