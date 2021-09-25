@@ -1,4 +1,4 @@
-# Magic Lantern Translation
+# Magic Lantern Translation, (with mcufont rendering backend)
 A Magic Lantern module that hijacks the `bmp_puts` function  
 and "translates" the output.
 
