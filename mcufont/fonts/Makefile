@@ -3,7 +3,7 @@ MCUFONT = ../encoder/mcufont
 
 # Names of fonts to process
 FONTS = DejaVuSans12 DejaVuSans12bw DejaVuSerif16 DejaVuSerif32 \
-	fixed_5x8 fixed_7x14 fixed_10x20 DejaVuSans12bw_bwfont arabic32
+	fixed_5x8 fixed_7x14 fixed_10x20 DejaVuSans12bw_bwfont
 
 # Characters to include in the fonts
 CHARS = 0-255 0x2010-0x2015
@@ -44,11 +44,6 @@ DejaVuSerif16.dat: DejaVuSerif.ttf
 	$(MCUFONT) rlefont_optimize $@ 10
 
 DejaVuSerif32.dat: DejaVuSerif.ttf
-	$(MCUFONT) import_ttf $< 32
-	$(MCUFONT) filter $@ $(CHARS)
-	$(MCUFONT) rlefont_optimize $@ 10
-
-arabic32.dat: arabic.ttf
 	$(MCUFONT) import_ttf $< 32
 	$(MCUFONT) filter $@ $(CHARS)
 	$(MCUFONT) rlefont_optimize $@ 10

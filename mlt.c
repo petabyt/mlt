@@ -7,7 +7,10 @@
 #include <patch.h>
 #include <string.h>
 
+int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text);
+
 CONFIG_INT("mlt.toload", mlt_toload, 1);
+CONFIG_INT("mlt.mcufont", mlt_mcufont, 1);
 int mlt_selection = 0;
 
 /* If the module should be standalone. Will read
@@ -121,8 +124,6 @@ FILE *dump = NULL;
 int done = 0;
 #endif
 
-int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text);
-
 void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
 {
 #ifndef DUMPER
@@ -131,25 +132,28 @@ void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
         translate(buffer, (char*)regs[3]);
         regs[3] = (uint32_t)buffer;
 
-        int scale = 1;
-        switch (FONT_ID(regs[0]))
+        if (mlt_mcufont)
         {
-        case 1:
-            scale = -2;
-            break;
-        case 2:
-            scale = -1;
-            break;
-        case 7:
-            scale = 2;
-            break;
-        case 4:
-            scale = 1;
-            break;
-        }
+            int scale = 1;
+            switch (FONT_ID(regs[0]))
+            {
+            case 1:
+                scale = -2;
+                break;
+            case 2:
+                scale = -1;
+                break;
+            case 7:
+                scale = 2;
+                break;
+            case 4:
+                scale = 1;
+                break;
+            }
 
-        mcu_write_text(scale, *(uint16_t*)(regs[1]), *(uint16_t*)(regs[2]), buffer);
-        regs[3] = 0;
+            mcu_write_text(scale, *(uint16_t*)(regs[1]), *(uint16_t*)(regs[2]), buffer);
+            regs[3] = 0;
+        }
     }
 #endif
 
@@ -194,6 +198,12 @@ static struct menu_entry translate_menu[] =
             {
                 .name = "Status",
                 .priv = &mlt_toload,
+                .max = 1,
+                .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
+            },
+            {
+                .name = "Use MCUFont Backend",
+                .priv = &mlt_mcufont,
                 .max = 1,
                 .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
             },

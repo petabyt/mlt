@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <bmp.h>
 
 typedef struct {
-	const char *fontname;
-	const char *text;
+	char *fontname;
+	char *text;
 	bool justify;
 	enum mf_align_t alignment;
 	int width;
@@ -15,30 +16,21 @@ typedef struct {
 	int scale;
 } options_t;
 
-/********************************************
- * Callbacks to specify rendering behaviour *
- ********************************************/
-
 typedef struct {
 	options_t *options;
 	uint16_t width;
 	uint16_t height;
 	uint16_t y;
-	const struct mf_font_s *font;
+	struct mf_font_s *font;
 	uint16_t origx;
 	uint16_t origy;
 } state_t;
-
-struct mf_font_s *fontload;
-struct mf_scaledfont_s scaledfont;
 
 /* Callback to write to a memory buffer. */
 static void pixel_callback(int16_t x, int16_t y, uint8_t count, uint8_t alpha,
 						   void *state)
 {
 	state_t *s = (state_t*)state;
-	uint32_t pos;
-	int16_t value;
 	
 	if (y < 0 || y >= s->height) return;
 	if (x < 0 || x + count >= s->width) return;
@@ -59,7 +51,7 @@ static uint8_t character_callback(int16_t x, int16_t y, mf_char character,
 }
 
 /* Callback to render lines. */
-static bool line_callback(const char *line, uint16_t count, void *state)
+static bool line_callback(char *line, uint16_t count, void *state)
 {
 	state_t *s = (state_t*)state;
 	
@@ -81,7 +73,7 @@ static bool line_callback(const char *line, uint16_t count, void *state)
 
 /* Callback to just count the lines.
  * Used to decide the image height */
-bool count_lines(const char *line, uint16_t count, void *state)
+int count_lines(const char *line, uint16_t count, void *state)
 {
 	int *linecount = (int*)state;
 	(*linecount)++;
@@ -93,28 +85,27 @@ int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text)
 	int height;
 	options_t options;
 	state_t state = {};
+	struct mf_scaledfont_s scaledfont;
 
 	memset(&options, 0, sizeof(options_t));
-	options.fontname = mf_get_font_list()->font->short_name;
+	options.fontname = "fixed_10x20";
 	options.text = default_text;
-	options.width = 480;
-	options.margin = 0;
+	options.width = 1024;
+	options.margin = 1;
 	options.scale = scale;
-	
-	
-	if (scale == 1) {
-		fontload = mf_find_font("DejaVuSerif32");
-	} else if (scale == 2) {
-		options.scale = 1;
-		y += 3;
-		fontload = mf_find_font("DejaVuSerif32");
-	} else {
-		options.scale *= -1;
-		fontload = mf_find_font("DejaVuSans12bw_bwfont");
-	}
 
-	mf_scale_font(&scaledfont, fontload, options.scale, options.scale);
-	fontload = &scaledfont.font;
+	struct mf_font_s *fontload = mf_find_font("fixed_10x20");
+	switch (scale) {
+	case 2:
+		mf_scale_font(&scaledfont, fontload, 2, 2);
+		fontload = &scaledfont.font;
+		break;
+	case 1:
+		mf_scale_font(&scaledfont, fontload, 1, 1);
+		fontload = &scaledfont.font;
+		x += 2; y += 2;
+		break;
+	}
 
 	/* Count the number of lines that we need. */
 	height = 0;
@@ -122,7 +113,7 @@ int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text)
 				options.text, count_lines, &height);
 	height *= 100;
 	height += 4;
-	
+
 	state.options = &options;
 	state.width = options.width;
 	state.height = height;
@@ -130,7 +121,7 @@ int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text)
 	state.font = fontload;
 	state.origx = x;
 	state.origy = y;
-	
+
 	/* Render the text */
 	mf_wordwrap(fontload, options.width - 2 * options.margin,
 				options.text, line_callback, &state);
