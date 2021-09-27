@@ -1,11 +1,9 @@
 # Specify LANG for standalone 
 # make install_qemu MLT_LANG=es
 
-ifdef MLT_LANG
-$(info MLT is being compiled as standalone with translations/mlt_$(MLT_LANG))
-_A:=$(shell python3 gen.py translations/mlt_$(MLT_LANG) > temp.h)
-MODULE_CFLAGS := -DSTANDALONE -DMLT_LANG=mlt_$(MLT_LANG)
-endif
+
+_A:=$(shell python3 gen.py translations/$(MLT_LANG) > temp.h)
+MODULE_CFLAGS := -DSTANDALONE -DMLT_LANG=$(MLT_LANG)
 
 _B := $(shell astyle --style=allman mlt.c; rm -rf *.orig)
 
