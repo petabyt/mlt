@@ -1,8 +1,8 @@
 import sys
 
-f = open(sys.argv[1], "r")
+f = open(sys.argv[1], "rb")
 contents = f.read()
 print("const char current_translation[" + str(len(contents)) + "] = {")
 for i in contents:
-    print(str(ord(i)) + ",")
+    print(str((i)) + ",")
 print("};")
