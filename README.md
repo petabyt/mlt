@@ -5,14 +5,7 @@ and "translates" the output.
 ![demo](demo.jpg)
 
 ## Usage
-If you downloaded a standalone module, just drop it in in the modules folder.  
-No setup needed.  
-
-If you compiled it to load via a file, you will have to copy a language file (mlt_es)  
-into the `ML` folder in the SD card.  
-
-In order to create a translation, follow the format of  
-`translation/mlt_es`.  
+Drop `mlt.mo` in `ML/modules`.
 
 In order to get menu text items, I logged bmp_printf  
 input into a file and removed duplicates and generated  
