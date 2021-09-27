@@ -4,3 +4,6 @@ temp.h
 dump
 input
 output
+*.o
+hgstamp
+*.mo
