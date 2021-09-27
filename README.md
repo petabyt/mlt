@@ -20,3 +20,7 @@ strings.
 Of course, running `strcmp` 100+ times every time the menu is drawn sounds  
 very CPU intensive. From my experience, it has no noticible effect. It  
 feels just as snappy without it enabled. As for battery life, I'm not 100% sure.  
+
+# Credits
+https://github.com/mcufont/mcufont (MIT License)  
+(https://github.com/fcambus/spleen) Uses "spleen" 12x24 BDF font, (BSD 2-Clause "Simplified" License)  
