@@ -7,6 +7,8 @@
 from unidecode import unidecode
 import os, sys
 
+DECODE = False
+
 def dump():
     # Any special characters will be converted
     # Into @ (ascii 64).
@@ -37,15 +39,17 @@ def genAll():
     for i in removeDuplicates:
         if i == '' or "@" in i or i == ' ':
             continue
-        # Generating input
-        #o.write(i + "\n")
-        #continue
     
         if unidecode(inputText[k]) == i:
             k += 1
             continue
     
-        x = i + "|" + unidecode(inputText[k])
+        x = i + "|"
+        if DECODE:
+            x += unidecode(inputText[k])
+        else:
+            x += inputText[k]
+
         o.write(x + "\n")
         k += 1
     o.close()
@@ -62,3 +66,9 @@ if sys.argv[1] == "all":
     genAll()
 elif sys.argv[1] == "template":
     genTemplate()
+elif sys.argv[1] == "input":
+    removeDuplicates = dump()
+    for i in removeDuplicates:
+        if i == '' or "@" in i or i == ' ':
+            continue
+        print(i)
