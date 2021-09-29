@@ -7,10 +7,10 @@ langs_name = ["German", "Spanish", "French"]
 for i in langs:
     f = open("translations/" + i, "rb")
     contents = f.read()
-    print("char mlt_" + i + "[" + str(len(contents)) + "] = {")
+    print("char mlt_" + i + "[" + str(len(contents) + 1) + "] = {")
     for i in contents:
         print(str((i)) + ",")
-    print("};")
+    print("0};")
 
 # Generate languages array
 print("char *mlt_langs[] = {")
