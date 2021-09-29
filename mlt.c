@@ -199,7 +199,7 @@ static struct menu_entry translate_menu[] =
                     MLT_LANGS
                 },
                 .icon_type = IT_DICE,
-                .max = MLT_NLANGS,
+                .max = MLT_NLANGS - 1,
                 .select = set_language,
                 .help = "Language / Idioma / Langue / Sprache",
                 .help2 = "   "
