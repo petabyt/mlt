@@ -154,7 +154,6 @@ void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
         done = 1;
     }
 #endif
-    printf("I am debug info. %x\n", &mlt_langs);
 }
 
 static void translate_task()
