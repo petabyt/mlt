@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-With MCUFONT rendering backend.  
-(https://github.com/mcufont/mcufont)  
-Uses "spleen" 12x24 font. (https://github.com/fcambus/spleen)  
-
 # Magic Lantern Translation
-=======
-# Magic Lantern Translation, (with mcufont rendering backend)
->>>>>>> parent of 8fb4654... Update README.md
 A Magic Lantern module that hijacks the `bmp_puts` function  
 and "translates" the output.
 
