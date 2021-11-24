@@ -1,9 +1,9 @@
-#include <dryos.h>
-#include <module.h>
-#include <menu.h>
+#include <bmp.h>
 #include <config.h>
 #include <console.h>
-#include <bmp.h>
+#include <dryos.h>
+#include <menu.h>
+#include <module.h>
 #include <patch.h>
 #include <string.h>
 
@@ -104,14 +104,15 @@ FILE *dump = NULL;
 int done = 0;
 #endif
 
-void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
+void hijack(uint32_t *regs, uint32_t *stack, uint32_t pc)
 {
 #ifndef DUMPER
     if (mlt_toload)
     {
-        translate(buffer, (char*)regs[3]);
+        translate(buffer, (char *)regs[3]);
         regs[3] = (uint32_t)buffer;
 
+#ifdef MCUFONT
         if (mlt_mcufont)
         {
             int scale = 1;
@@ -131,21 +132,21 @@ void hijack(uint32_t* regs, uint32_t* stack, uint32_t pc)
                 break;
             }
 
-            mcu_write_text(scale, *(uint16_t*)(regs[1]), *(uint16_t*)(regs[2]), buffer);
+            mcu_write_text(scale, *(uint16_t *)(regs[1]), *(uint16_t *)(regs[2]), buffer);
             regs[3] = 0;
         }
-    }
 #endif
-
-#ifdef DUMPER
-    if (done) return;
+    }
+#else
+    if (done)
+        return;
     if (dump == NULL)
     {
         dump = FIO_OpenFile("dump", O_RDWR | O_SYNC);
     }
 
     printf("Writing %s", regs[3]);
-    FIO_WriteFile(dump, (char*)regs[3], strlen((char*)regs[3]));
+    FIO_WriteFile(dump, (char *)regs[3], strlen((char *)regs[3]));
     FIO_WriteFile(dump, "\n", 1);
 
     if (!strcmp(regs[3], "Status"))
@@ -161,7 +162,7 @@ static void translate_task()
     /* ... */
 }
 
-static void set_language(void* priv, int delta)
+static void set_language(void *priv, int delta)
 {
     mlt_selection = MOD(mlt_selection + delta, MLT_NLANGS);
     current_translation = mlt_langs[mlt_selection];
@@ -169,44 +170,37 @@ static void set_language(void* priv, int delta)
 }
 
 static struct menu_entry translate_menu[] =
-{
     {
-        .name = "MLT Settings",
-        .select = menu_open_submenu,
-        .submenu_width = 700,
-        .help = "Language / Idioma / Langue / Sprache",
-        .children = (struct menu_entry[])
         {
-            {
-                .name = "Status",
-                .priv = &mlt_toload,
-                .max = 1,
-                .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
-                .help2 = "  "
+            .name = "MLT Settings",
+            .select = menu_open_submenu,
+            .submenu_width = 700,
+            .help = "Language / Idioma / Langue / Sprache",
+            .children = (struct menu_entry[]){
+                {.name = "Status",
+                 .priv = &mlt_toload,
+                 .max = 1,
+                 .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
+                 .help2 = "  "},
+#ifdef MCUFONT
+                {.name = "Use MCUFont Backend",
+                 .priv = &mlt_mcufont,
+                 .max = 1,
+                 .help = "   ",
+                 .help2 = "   "},
+#endif
+                {.name = "Select Language...",
+                 .priv = &mlt_selection,
+                 .choices = (const char *[]){
+                     MLT_LANGS},
+                 .icon_type = IT_DICE,
+                 .max = MLT_NLANGS - 1,
+                 .select = set_language,
+                 .help = "Language / Idioma / Langue / Sprache",
+                 .help2 = "   "},
+                MENU_EOL,
             },
-            {
-                .name = "Use MCUFont Backend",
-                .priv = &mlt_mcufont,
-                .max = 1,
-                .help = "   ",
-                .help2 = "   "
-            },
-            {
-                .name = "Select Language...",
-                .priv = &mlt_selection,
-                .choices = (const char *[])
-                {
-                    MLT_LANGS
-                },
-                .icon_type = IT_DICE,
-                .max = MLT_NLANGS - 1,
-                .select = set_language,
-                .help = "Language / Idioma / Langue / Sprache",
-                .help2 = "   "
-            },
-            MENU_EOL,
         },
-    },
 };
 
 static unsigned int translate_init()
@@ -219,7 +213,7 @@ static unsigned int translate_init()
         size = strlen(current_translation);
 
         printf("Applying bmp_puts translation patch...\n");
-        uint32_t *func = (uint32_t*)bmp_puts;
+        uint32_t *func = (uint32_t *)bmp_puts;
         patch_hook_function((uintptr_t)bmp_puts, *func, hijack, "Translation patch");
     }
 

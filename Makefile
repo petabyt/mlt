@@ -1,16 +1,20 @@
-# Specify LANG for standalone 
-# make install_qemu MLT_LANG=es
-
-
+# Generate the temp.h file 
 _A:=$(shell python3 gen.py translations/$(MLT_LANG) > temp.h)
-MODULE_CFLAGS := -DSTANDALONE -DMLT_LANG=$(MLT_LANG)
+MODULE_CFLAGS := -DSTANDALONE
 
-_B := $(shell astyle --style=allman mlt.c; rm -rf *.orig)
+ifdef MCUFONT
+MODULE_CFLAGS += -DMCUFONT
+endif
+
+_B := $(shell clang-format -style=file -i mlt.c mcu.c)
+
 
 # Compile with mcufont
-MCUFONT=$(shell ls mcufont/decoder/*.c | sed 's/\.c/\.o/g') mcu.o
+ifdef MCUFONT
+MCUFONT_C=$(shell ls mcufont/decoder/*.c | sed 's/\.c/\.o/g') mcu.o
 MODULE_CFLAGS+=-Imcufont/fonts/ -Imcufont/decoder/
+endif
 
 MODULE_NAME=mlt
-MODULE_OBJS=mlt.o $(MCUFONT)
+MODULE_OBJS=mlt.o $(MCUFONT_C)
 include ../../modules/Makefile.modules

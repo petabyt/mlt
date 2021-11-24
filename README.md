@@ -1,4 +1,4 @@
-# Magic Lantern Translation
+# Magic Lantern Translator
 A Magic Lantern module that hijacks the `bmp_puts` function  
 and "translates" the output.
 
@@ -17,7 +17,15 @@ French:  https://docs.google.com/document/d/14A0eS9CKrAxoJHmEkFWCfA-011OPeWJIFAH
 German:  https://docs.google.com/document/d/1munmZIPLASBq0aGodO7J9vumgD9TcqnhCKuxYtc72Y8/edit?usp=sharing  
 Spanish: https://docs.google.com/document/d/1cg7afAO2GxoiJX2iHze2Ntu36CBteEo_miUcJ_kXG7c/edit?usp=sharing  
 
-## Help Needed:
+## Compiling
+```
+make
+```
+
+You can compile with the following flags:
+- `MCUFONT=X`: Compile with the [mcufont](https://github.com/mcufont/mcufont) rendering backend.  
+
+## TODO/Help Needed:
 - [ ] Manually review translations, and add more translations
 - [ ] Case insensitive string searching (possibly ignore symbols too)
 - [ ] "Translate" parts of a string, ignoring generated parts
