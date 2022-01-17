@@ -1,12 +1,13 @@
 # Generate the temp.h file 
-_A:=$(shell python3 gen.py translations/$(MLT_LANG) > temp.h)
+$(info $(shell python3 gen.py translations/$(MLT_LANG) > temp.h))
+
 MODULE_CFLAGS := -DSTANDALONE
 
 ifdef MCUFONT
 MODULE_CFLAGS += -DMCUFONT
 endif
 
-_B := $(shell clang-format -style=file -i mlt.c mcu.c)
+$(info $(shell clang-format -style=file -i mlt.c mcu.c))
 
 
 # Compile with mcufont
