@@ -33,7 +33,7 @@ Allowed actions|Erlaubte Aktionen
 Also up/down keys/joystick work as +/- rating if zoomed out.|Auch die Auf-/Ab-Tasten/Joystick funktionieren als +/- Bewertung, wenn herausgezoomt wird.
 Alternates ISO between frames. Flickers while recording.|Wechselt die ISO zwischen den Frames. Flackert während der Aufnahme.
 Always On|Always OnSie
-Always use LiveView (with manual lens or after lens swap).|Verwendenimmer LiveView (mit manuellem Objektiv oder nach Objektivwechsel).
+Always use LiveView (with manual lens or after lens swap).|Verwenden immer LiveView (mit manuellem Objektiv oder nach Objektivwechsel).
 Anamorphic|Anamorphes
 Arkanoid game|Arkanoid-Spiel
 Arkanoid game.|Arkanoid-Spiel.
@@ -255,7 +255,6 @@ Lua scripting|Lua-Skripting
 Lua scripting.|Lua-Skripting.
 LumaFast, over 99%|LumaFast, über 99%
 Magic Lantern help files could not be found.              |Magic Lantern Hilfedateien konnten nicht gefunden werden.              
-Magic Lantern version : Nightly.2021Sep07.1300D110|Magic Lantern-Version: Nightly.2021Sep07.1300D110
 Magic Zoom is disabled.|Magic Zoom ist deaktiviert.
 Magnification|Vergrößerung
 Main Clock|Hauptuhr Stellen
@@ -265,7 +264,6 @@ Marshall / SmallHD / 50-55% / 67-72% / Banding detection / GreenScreen.|Marshall
 May make the image easier to see from difficult angles.|Kann das Bild aus schwierigen Winkeln leichter erkennen.
 Measurement unit for brightness level(s).|Maßeinheit für Helligkeitsstufe(n).
 Memory patches|Memory Patches
-Mercurial changeset   : 788eff4f6400 (1300D) tip|Mercurial changeset: 788eff4f6400 (1300D) Spitze
 Mid-range correction     |Mid-RangeKorrektur     
 Misc  - DigitalZoom Shortcut|Sonstiges - DigitalZoom Shortcut
 Misc key settings|Sonstige Tasteneinstellungen
@@ -320,10 +318,10 @@ Position of top/bottom bars, useful for external displays.|Position der oberen/u
 Position of zoom box (fixed or linked to focus box).|Position der Zoombox (fest oder mit Fokusbox verknüpft).
 Post Deflicker|Post-
 Post deflicker sidecar files.|Deflicker-Sidecar-Dateien nach dem Deflicker.
-Prefs|PrefsDISPDrücken
-Press DISP|Drücken SieDrücken SieSie
-Press INFO|INFO
-Press Q / PLAY|Q / PLAY
+Prefs|Prefs
+Press DISP|Drücke DISP
+Press INFO|Drücke INFO
+Press Q / PLAY|Drücke Q / PLAY
 Press SET to choose MyMenu items or hide what you don't use.|Drücken Sie SET, um MyMenu-Elemente auszuwählen oder auszublenden, was Sie nicht verwenden.
 Preview straightened images from fisheye lenses. LV+PLAY.|Zeigen Sie eine Vorschau von begradigten Bildern von Fischaugenobjektiven an. LV+PLAY.
 Quality factor (-16 = best quality). Try not to use it!|Qualitätsfaktor (-16 = beste Qualität). Versuchen Sie, es nicht zu verwenden!
@@ -460,8 +458,8 @@ Warn if some of your settings are changed by mistake.|Warnen Sie, wenn einige Ih
 Warn if you change the picture quality to something else.|Warnen Sie, wenn Sie die Bildqualität auf etwas anderes ändern.
 Warn if you disable AWB by mistake.|Warnen Sie, wenn Sie AWB versehentlich deaktiviert haben.
 Warn if you enable ALO by mistake.|Warnen Sie, wenn Sie ALO versehentlich aktiviert haben.
-Warn if you turn the mode dial to some other position.|Warnen Sie, wenn Sie das Modus-Wahlrad in eine andere Position drehen.
-Warn on Manual / Automatic Focus|Warnen bei manueller / automatischer Fokussierung
+Warn if you turn the mode dial to some other position.|Warnt Sie, wenn Sie das Modus-Wahlrad in eine andere Position drehen.
+Warn on Manual / Automatic Focus|Warnt bei manueller / automatischer Fokussierung
 Warn type, LED, Messagebox, Beep|Warntyp, LED, Messagebox, Beep
 Warning for bad settings|Warnung bei schlechten Einstellungen
 Warning message|Warnmeldung
