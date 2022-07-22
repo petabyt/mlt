@@ -1,10 +1,12 @@
 import sys
 
-langs = ["ade", "aes", "afr"]
-langs_name = ["German", "Spanish", "French"]
+langs = ["X", "ade", "aes", "afr"]
+langs_name = ["English", "German", "Spanish", "French"]
 
 # Generate language contents
 for i in langs:
+    if i == "X":
+        continue
     f = open("translations/" + i, "rb")
     contents = f.read()
     print("char mlt_" + i + "[" + str(len(contents) + 1) + "] = {")
@@ -15,10 +17,12 @@ for i in langs:
 # Generate languages array
 print("char *mlt_langs[] = {")
 for i in langs:
+    if i == "X":
+        continue
     print("mlt_" + i + ",")
 print("};")
 
-print("char *current_translation;")
+print("char *current_translation = NULL;")
 
 # Generate languages name array
 print('#define MLT_LANGS ', end = "")

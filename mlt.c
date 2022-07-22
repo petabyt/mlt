@@ -19,6 +19,8 @@ CONFIG_INT("mlt.selection", mlt_selection, 0);
 /* Expected to be bigger than bmp_puts input */
 #define MLT_MAX_STRING 128
 
+#define DEFAULT_LANG "English"
+
 int no_file = 0;
 uint32_t size = 0;
 
@@ -26,7 +28,7 @@ char buffer[MLT_MAX_STRING];
 
 void translate(char output[], char input[])
 {
-    if (current_translation == 0)
+    if (current_translation == NULL)
     {
         return;
     }
@@ -106,11 +108,15 @@ int done = 0;
 
 void hijack(uint32_t *regs, uint32_t *stack, uint32_t pc)
 {
+    char *text = (char *)regs[3];
 #ifndef DUMPER
     if (mlt_toload)
     {
-        translate(buffer, (char *)regs[3]);
-        regs[3] = (uint32_t)buffer;
+        if (current_translation != NULL)
+        {
+            translate(buffer, (char *)regs[3]);
+            text = (char *)buffer;
+        }
 
 #ifdef MCUFONT
         if (mlt_mcufont)
@@ -132,7 +138,9 @@ void hijack(uint32_t *regs, uint32_t *stack, uint32_t pc)
                 break;
             }
 
-            mcu_write_text(scale, *(uint16_t *)(regs[1]), *(uint16_t *)(regs[2]), buffer);
+            mcu_write_text(scale, *(uint16_t *)(regs[1]), *(uint16_t *)(regs[2]), text);
+
+            // Yes, this strongly depends on bmp write text rejecting NULL
             regs[3] = 0;
         }
 #endif
@@ -164,7 +172,14 @@ static void translate_task()
 
 static void set_language(void *priv, int delta)
 {
+    char *langs[] = {MLT_LANGS};
     mlt_selection = MOD(mlt_selection + delta, MLT_NLANGS);
+    if (!strcmp(langs[mlt_selection], "English"))
+    {
+        current_translation = NULL;
+        return;
+    }
+
     current_translation = mlt_langs[mlt_selection];
     size = strlen(current_translation);
 }
@@ -180,14 +195,14 @@ static struct menu_entry translate_menu[] =
                 {.name = "Status",
                  .priv = &mlt_toload,
                  .max = 1,
-                 .help = "Turn OFF / Apagar / Eteindre / Schalte aus",
-                 .help2 = "  "},
+                 .help = "Turn ON/OFF / Apagar / Eteindre / Schalte aus",
+                 .help2 = "Must restart to take effect"},
 #ifdef MCUFONT
                 {.name = "Use MCUFont Backend",
                  .priv = &mlt_mcufont,
                  .max = 1,
-                 .help = "   ",
-                 .help2 = "   "},
+                 .help = "For accents / symbols / acentos",
+                 .help2 = "github.com/mcufont"},
 #endif
                 {.name = "Select Language...",
                  .priv = &mlt_selection,

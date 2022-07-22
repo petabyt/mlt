@@ -88,13 +88,13 @@ int mcu_write_text(int scale, uint16_t x, uint16_t y, char *default_text)
     struct mf_scaledfont_s scaledfont;
 
     memset(&options, 0, sizeof(options_t));
-    options.fontname = "fixed_10x20";
+    options.fontname = FONT_NAME;
     options.text = default_text;
     options.width = 1024;
     options.margin = 1;
     options.scale = scale;
 
-    struct mf_font_s *fontload = mf_find_font("fixed_10x20");
+    struct mf_font_s *fontload = mf_find_font(FONT_NAME);
     switch (scale)
     {
     case 2:
