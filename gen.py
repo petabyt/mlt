@@ -1,7 +1,7 @@
 import sys
 
-langs = ["X", "ade", "aes", "afr"]
-langs_name = ["English", "German", "Spanish", "French"]
+langs = ["ade", "aes", "afr", "X"]
+langs_name = ["German", "Spanish", "French", "English"]
 
 # Generate language contents
 for i in langs:

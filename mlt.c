@@ -23,6 +23,7 @@ CONFIG_INT("mlt.selection", mlt_selection, 0);
 
 int no_file = 0;
 uint32_t size = 0;
+char *langs[] = {MLT_LANGS};
 
 char buffer[MLT_MAX_STRING];
 
@@ -172,7 +173,6 @@ static void translate_task()
 
 static void set_language(void *priv, int delta)
 {
-    char *langs[] = {MLT_LANGS};
     mlt_selection = MOD(mlt_selection + delta, MLT_NLANGS);
     if (!strcmp(langs[mlt_selection], "English"))
     {
@@ -201,8 +201,8 @@ static struct menu_entry translate_menu[] =
                 {.name = "Use MCUFont Backend",
                  .priv = &mlt_mcufont,
                  .max = 1,
-                 .help = "For accents / symbols / acentos",
-                 .help2 = "github.com/mcufont"},
+                 .help = "For accents / symbols / acentos (spleen font)",
+                 .help2 = "Must restart to take effect"},
 #endif
                 {.name = "Select Language...",
                  .priv = &mlt_selection,
@@ -224,8 +224,11 @@ static unsigned int translate_init()
 
     if (mlt_toload)
     {
-        current_translation = mlt_langs[mlt_selection];
-        size = strlen(current_translation);
+        if (strcmp(langs[mlt_selection], "English"))
+        {
+            current_translation = mlt_langs[mlt_selection];
+            size = strlen(current_translation);
+        }
 
         printf("Applying bmp_puts translation patch...\n");
         uint32_t *func = (uint32_t *)bmp_puts;
