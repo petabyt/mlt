@@ -1,0 +1,710 @@
+！！！不使用时禁用此选项！！！  
+(+), Med, TL, 2:1
+(none)
++1 EV
++16px
++8px
+-1
+-16px
+-16px / -8px / Normal / +8px / +16px.
+-8
+-8px
+0
+0（-1）0（100，-9.0
+
+EV）0（1600，-13.0
+EV）0..255
+0.0 EV
+0.000
+0.1秒
+0.2GB
+0.2秒
+0.3秒
+0.4秒
+0.5％0.5
+秒
+0.6秒
+0.7 s
+0.8s
+0.9s
+0x00
+0x0030 (48)
+0xC8F21C：0xE92D4037 -> 0xEA017CB5。
+0xFF
+1
+1 (OFF)
+1 EV
+1 EV / 128 帧
+1 EV / 16 帧
+1 EV / 256 帧
+1 EV / 32 帧
+1 EV / 512 帧
+1 EV / 64 帧
+1 EV / 8 帧
+1 EV / 8 帧 / 1 EV / 16 帧 / 1 EV / 32 帧 / 1 EV / 64 帧 /
+1 RAM
+1 kHz
+1.0x
+1.0x（默认）
+1.0x = 佳能默认，0.4x = 30 分钟，1.4x = 快卡。
+1/30..1/4000
+10s
+15s
+16:10 HDMI,t/b
+16:9 HDMI,t/b
+18-55 mm
+18K = 10622+7627
+1:1
+1:1 / 2:1 / 3:1。
+1:1 显示记录像素，2:1 显示双倍。
+1s
+1x, 3x
+2
+2 EV
+2.500 (从 0)
+257K + 833K
+26 C, 78 F, 152 raw
+28.80 MHz
+2:1
+3
+3 EV
+3:1
+3:2 (1.5)
+3R EXT -40
+3rd p. flash LV
+3s
+3x...10x
+4
+4 EV
+4:3 (1.33)
+4:3 显示，自动
+4:3 显示，自动 / 16:10 HDMI,t/b / 16:9 HDMI,t/b / 底部，低于 3:2 /
+5
+5 EV
+50-55
+5:3 (1.66)
+5:4 (1.25)
+6 EV
+67-72
+70%
+7:5 (1.4)
+8
+9:5 (1.8)
+=> 调整 ISO、快门速度和光圈没有大的跳跃。
+A = 平均值，B = 即时比特率，Q = 即时 QScale。
+允许在 LiveView 中触发第 3 方闪光灯的技巧。
+AF/MF 警告
+ALO 警告
+关于魔灯
+绝对零锐度
+实际 FPS
+调整暗度，与 'dcraw -k' 一样。修复绿色阴影。
+专家的高级选项。小心使用。
+高级设置
+高级...
+允许的操作
+如果缩小，向上/向下键/操纵杆也可用作 +/- 评级。
+在帧之间交替 ISO。录制时闪烁。
+Always
+Always On
+始终使用 LiveView（使用手动镜头或更换镜头后）。
+变形
+打砖块
+打砖块游戏
+打砖块游戏。
+Audio
+AudioL EXT -40
+AudioR EXT -40
+自动
+自动曝光
+自动曝光算法。
+自动重启电影录制，如果它碰巧停止。
+自动更新
+自动对焦，一次拍摄的照片数量......
+回到“初学者”模式。
+平衡条
+带检测
+蜂鸣声、测试音
+基准
+比特率
+比特率 (CBR)
+位图 (1/5)
+比特率信息
+黑电平
+蓝色
+WB 上的增强调整
+底部、3:2
+底部、16:9 下
+左下
+右下
+亮灰色
+BuffWarnLevel
+旁路加载 ML
+CBR
+CBR 系数
+CINESCO2.BMP
+可以在公制和英制焦距单位之间进行选择
+功能
+卡通外观卡通外观
+通过强调边缘获得。
+中心
+更改 H.264 比特率。小心，录音可能会停止！
+改变 FPS。还会禁用声音并改变快门速度。
+更改 FPS 有副作用 - 选择最适合您的：
+选择要在直方图上显示的 EV 图像指示器。
+在基于 YUV (JPG) 或基于 RAW 的直方图之间进行选择。
+选择拍摄照片的时间：
+混乱的混乱
+圈 用于自由度计算圈。
+从 LiveView 显示清除位图叠加。
+清除叠加
+剪辑警告
+代码：C8F21C
+颜色
+配色方案
+位图叠加的配色方案（ML 菜单、佳能菜单...）
+完整的用户指南
+配置自动保存
+配置自动保存、手动保存、恢复默认设置...
+配置选项 - 启动时
+设置配置选项
+配置预设
+配置 ML 蜂鸣声并播放测试音（440Hz、1kHz...）
+恒定曝光
+上下文帮助
+角校正   	 
+在中心区域和角落之间应用校正。
+更偏向角落的更正。
+可能有助于白平衡的疯狂色彩效果。
+创意效果
+裁剪因子显示裁剪
+裁剪
+标记标记主要用于电影模式。
+用于取景的裁剪标记或自定义网格。
+定制REC / STANDBY通知，的视觉或听觉
+定制菜单
+青色
+DOF设置
+自由度式
+在实时查看DOF信息
+黑暗
+深灰色
+深绿色
+暗红色
+明亮的区域变暗尖锐的边缘。
+调试
+默认
+默认/深/亮灰色/深灰色/深红色/深绿色。
+默认值：APS-C 为 19，全画幅相机为 29。
+Defishing
+Delay
+检测到的运动和拍摄的图片之间的延迟。
+使用 SET+Erase 快速删除文件（小心！！！）
+Desaturate Desaturate
+Desired FPS
+Detect Size
+模块的诊断选项。
+Diffraction
+Diffraction-aware
+Diffraction-aware：考虑散焦和衍射模糊。
+DigitalZoom Shortcut
+禁用所有模块
+完全禁用锐化（低于佳能的零级）。
+禁用
+显示
+显示 GUI 事件（按钮代码）。
+显示 35mm 等效值。焦距包括裁剪因子。
+显示总 CPU 使用率（百分比）。
+当一个颜色通道被剪裁时显示警告点。
+倒置显示叠加图形并翻转箭头键。
+显示 Canon 和 Magic Lantern 启动的任务。
+不要点我！
+双 ISO
+转储 ROM 和 RAM
+从当前视频模式转储所有图像缓冲区（LV、HD、RAW）。
+转储图像缓冲区
+两次拍摄之间的持续时间。
+FPS 上升的持续时间（实时，而非回放）。
+动态范围
+EA017CB5
+EDMAC 逆向工程和诊断工具。
+EDmac 工具
+EF-S18-55mm f/3.5-5.6 IS
+EFIC 芯片温度（主板某处）。
+ETTR 提示
+EXP，级别=8
+EXP：对曝光变化做出反应（大动作）。
+边缘 + 色度
+边缘强调
+边缘图像
+在 LiveView 中
+编辑 编辑值
+启用蜂鸣
+为 ML 中的杂项事件启用蜂鸣信号。
+启用/禁用 ML 叠加图形（斑马纹、裁剪标记...）
+精确 FPS
+精确 FPS（计算）。要进行微调，请更改计时器值。
+通过挖掘 DIGIC 发现的实验性图像过滤器。
+世博会。改变
+曝光辅助：从小点显示亮度。
+曝光辅助：每个亮度级别都有颜色编码。
+曝光辅助：显示亮度级别的分布。
+曝光辅助：用于检查整体亮度。
+Extender
+Extreme Chroma
+Extreme 拐角校正
+FPS 覆盖
+FPS 斜坡
+FPS 计时器 A
+FPS 计时器 B
+记录的 FPS 值。视频将以佳能 FPS 播放。
+FW 默认
+FW 默认/CBR/VBR (QScale)。
+假色
+用于曝光、条带、绿屏的假调色板...
+文件管理
+器 过滤器偏置
+精细细节
+以大约 20 微秒的增量微调快门速度。
+微调焦点检测算法：
+固件默认值/CBR（推荐）/VBR（非常危险）
+Flash Tweaks
+Flash expo comp.
+闪光曝光补偿，LiveView 中的第 3 方闪光……
+闪光曝光补偿，从 -10EV 到 +3EV。
+Focal len
+Focus
+Focus Distance Units
+Focus Peak
+Focus box
+Focus box / Top-Left / Top-Right / Bottom-Right / Bottom-Left。
+焦点确认
+焦点峰值颜色（固定或颜色编码）。
+通过 DIGIC 对焦峰值。不占用CPU！
+Focus+ZREC
+仅用于 LiveView 预览。不影响录音。
+用于间隔计、运动检测、陷阱聚焦、音频遥控。
+用于故障排除。
+强制 HDMI-VGA
+强制 LiveView
+在 HDMI 显示器上强制使用低分辨率 (720x480)。
+计算景深的公式：可用
+Free Memory
+内存，在 ML 和佳能固件之间共享。
+全屏
+绿色=拍摄，青色=srm，蓝色=可能免费，红色=可能使用。
+游戏
+Ghost 图像
+Ghost 图像已禁用。
+Global Draw
+Global Focus
+Gradual Exposure
+Grayscale
+灰度图像
+灰度记录。使用 WB 或 pic 样式进行微调。
+绿色
+绿色条
+绿色条 / SplitScreen / SS ZeroCross。
+GreenScreen
+HDR 视频
+Half Shutter
+HalfShutter
+帮助
+未找到帮助文件
+HiJello、FastTv
+高
+高值 = 较低的 FPS、更多的果冻效果、更快的快门。
+高值 = 较低的 FPS，快门速度收敛到 1/fps。
+较高的值 = 对运动不太敏感。
+直方图
+直方图类型
+曝光转换应该有多快。
+一次拍摄多少张照片（对于每个触发事件）。
+有多少像素被认为是焦点（百分比）。
+如何显示焦点确认（绿条/分屏）。
+如何触发间隔计启动：
+ISO 0/0,4.0EV
+ISO A
+ISO B
+ISO 调整。负增益具有更好的高光衰减。
+一半帧的 ISO 值。
+另一半帧的 ISO 值。
+如果打开，您必须按住半快门 1 秒钟。
+如果 RAW 数据不可用，它将回退到基于 YUV 的数据。
+如果启用，ML 设置将在关机时自动保存。
+图像微调
+图像查看
+图像位置
+图像 r - 播放模式操作
+图像查看 - 图像查看
+图像查看设置
+与文件管理器集成的图像查看器。
+内部温度
+间隔计
+间隔计脚本
+间隔计被禁用。
+加载模块后保持控制台显示
+保持与默认 FPS 相同的曝光（亮度）。
+快捷键
+L EXT -40
+L EXTkHz
+-401L EXT -403
+L EXT -40Speaker Volume
+L EXT -40Square
+LED, popup
+LED, popup, beep
+LED, popup, beep / LED, popup, rep.蜂鸣/LED，弹出/弹出，蜂鸣/
+LED，弹出，代表。哔
+LV DIGIC峰值
+LV显示预设
+亮度LV
+LV按钮
+LV对比
+LV疯狂颜色
+LV显示增益
+LV饱和
+Language /语/索绪尔/ SPRACHE
+大型
+退出菜单
+镜头ID
+镜头信息偏好设置
+镜头信息
+镜头：EF-S18-55mm F / 3.5-5.6 IS，0mm f/25.7
+Level
+Linear
+线性或对数直方图。
+LiveView
+崩溃后后
+加载模块 即使在相机崩溃并取出电池加载模块。
+Local Focus
+Log
+Low
+Low Jello，180d
+低光
+低光：在低 FPS 时，使用 1/FPS（360 度）快门速度。
+Lua 脚本
+Lua 脚本。
+LumaFast，超过 99%
+ML Digital ISO
+ML Tetris
+ML Translate
+ML Translation。
+ML/SETTINGS/
+MLT 设置
+MLT 设置 - 状态
+MLV 播放器
+Magenta
+Magic Lantern 帮助文件无法找到。         	 
+Magic Lantern 版本：Nightly.2021Sep07.1300D110
+Magic Zoom
+Magic Zoom 已禁用。
+放大
+主时钟
+确保所有 ML 文件都安装到您的卡上。   	 
+使 LiveView 在完全黑暗中可用（照片模式）。
+Marshall
+Marshall / SmallHD / 50-55% / 67-72% / 条带检测 / GreenScreen。
+可以使图像更容易从困难的角度看到。
+亮度级别的测量单位。
+中等
+内存补丁
+Mercurial 变更集：788eff4f6400 (1300D) tip
+中档校正	 
+其他 - DigitalZoom 快捷键
+其他键设置
+与快捷键相关的其他选项。
+模式
+模式警告
+修改的
+模块已禁用。
+模块禁用。按 [Q] 了解更多信息。
+模块加载成功。按 [Q] 了解更多信息。
+模块
+模块调试
+运动检测
+电影
+电影记录
+电影重启
+电影重启、电影记录、REC/待机通知...
+电影调整
+电影：DISP + 放大在 1x 和 3x 模式之间切换。
+命名
+负
+负图像。反转所有颜色:)
+正常
+正常/高/非常高。
+数量LV 显示预设。使用 INFO 或 LiveV 切换。
+拍摄的照片数量 + LiveView 驱动的
+数量 数字表示被剪裁的像素百分比。
+OFF
+OFF (1)
+OFF (1) / 2 / 3 / 4.
+OFF / 5:4 (1.25) / 4:3 (1.33) / 7:5 (1.4) / 3:2 (1.5) / 5:3 ( 1.66) / 9:5 (1.8) /
+OFF / Elapsed / Remain.Card / Remain.4GB。
+关闭 / 半快门 / 空闲时 / 始终 / 录制。
+OFF / LiveView / QuickReview / ON，所有模式。
+关闭 / 模式 1 / 模式 2 / 模式 3。
+关闭 / 百分比 / 繁忙任务 (ABS) / 繁忙任务 (REL)。
+关闭/直线/帕尼尼。
+关闭/红十字会/REC/STBY。
+关 / 稍微锐利 / 边缘图像 / 边缘 + 色度。
+关闭 / 启动和 CPUlens / 始终。
+OFF / AF 以外 / MF 以外。
+关/除M以外/除Av以外/除Tv以外/除P以外。
+OFF/除RAW以外/除fine以外。
+OK
+ON
+ON (1s)
+ON, 10s
+ON, 35mm eq.
+ON，所有模式
+ON，0.5，local
+仅当前预设：ML/SETTINGS/
+打开子菜单
+优化
+播放（图像查看）模式的选项。
+叠加
+叠加 LiveView 中的任何图像。在 PLAY 模式下，按 LV btn。
+调色板 	 
+Panini
+Percent
+整体亮度级别的百分比。
+一次显示
+图片 图片查看器
+播放模式操作
+播放测试音
+位置
+顶部/底部条的位置，对于外部显示器很有用。
+缩放框的位置（固定或链接到焦点框）。
+Post Deflicker Post deflicker
+sidecar 文件。
+Prefs
+按 DISP
+按 INFO
+按 Q / PLAY
+按 SET 选择 MyMenu 项目或隐藏您不使用的项目。
+从鱼眼镜头预览拉直的图像。 LV+播放。
+保护图像
+QScale
+质量因子（-16 = 最佳质量）。尽量不要使用它！
+质量警告
+Quick Erase
+Quick Zoom
+QuickReview
+QuickReview 默认
+R EXT -40
+R EXT -403
+R EXT -40Audio
+R EXT -40Enable Beeps
+RAW (EV)
+RAW EV 指示器
+RAW HistoBar (MAX)
+RAW N/A, Log
+RAW-based (RGB)
+REC 键
+REC 键无效。
+REC/STBY 通知
+RGB (HTML)
+RGB (Percent)
+ROM0.BIN:F0000000, ROM1.BIN:F8000000, RAM4.BIN
+覆盖 FPS 和默认 FPS 之间的斜坡。仅曲柄不足。
+斜坡持续时间
+斜坡速度
+Rate Image
+只读。
+最近
+录制
+直线
+红色
+红色/绿色/蓝色/青色/洋红色/黄色/全局焦点/局部焦点。
+需要长按
+恢复 ML 默认值
+滚动快门
+SET /
+启动时SET
+SET+Erase
+SS ZeroCross
+将 ML 设置保存到当前预设目录。
+立即保存配置
+保存每部电影的元数据，例如 MVI_1234.LOG
+缩放
+屏幕布局
+屏幕方向、位置微调...
+屏幕截图 -
+10 秒后的 10 秒屏幕截图 => VRAMx.PPM。
+魔灯的第二场比赛。在 LiveView 中尝试一下。
+有关说明，请参阅 http://wiki.magiclantern.fm/install。
+选择半快门动作。
+序列号
+显示关于景深信息的设置。
+拍摄
+拍摄首选项
+拍摄全开或拧开镜头以避免光圈闪烁。
+快捷方式（仅限 LV）
+显示 CPU 使用率
+显示 GUI 事件
+显示控制台
+显示当前镜头名称（由镜头或适配器报告）。
+显示您可以将曝光向右推多少个档位。
+在播放模式下
+显示 在照片模式下
+显示 显示在佳能代码或数据区中修补的内存地址。
+显示任务
+显示图像的哪些部分是焦点。
+将颜色分布显示为 UV 图。用于分级和 WB。
+Shutter Count
+Shutter 微调
+Shutter range
+快门速度范围，佳能显示1/30-1/4000时。
+Simple
+Simple...
+Simple：只考虑散焦模糊，忽略衍射效应。
+SinglePress -> 100%
+大小
+应检测到运动的区域的大小。
+缩放框的大小（小/中/大/全屏）。
+更清晰的
+小小
+/中/大/全屏。
+小号中号大号。
+SmallHD
+捕捉模拟
+音效
+扬声器音量
+扬声器VolumeR EXT -40
+拆分屏幕
+光斑位置
+Spotmeter
+Spotmeter单位
+Spotmeter被禁用。
+点测器位置：居中或链接到焦点框。
+Square
+Start after
+only
+Start 通过半按快门开始录制。有线遥控器。
+开始记录以找出垂直分辨率。
+在 X 秒/分钟/小时后启动间隔计。
+启动触发器
+启动/停止
+启动/停止/仅启动/仅停止。
+状态
+停止后后
+仅停止停止
+在拍摄 X 次间隔计。
+垂直拉伸 LiveView 图像，用于变形镜头。
+强边缘
+强边缘：寻找边缘，在弱光下效果最佳。
+通过 DIGIC 寄存器调整细微的图像增强。
+Swap UV
+交换 U 和 V 通道（红色 <--> 蓝色）。
+将 FPS 与快门速度同步，以便在 LiveView 中进行长时间曝光。
+同步 w。快门
+拍照
+每次
+拍照 当主体移动或曝光改变时拍照。
+以固定间隔拍照（用于延时拍摄）。
+当被摄体清晰时拍摄照片。仅限MF。
+测试哔哔声
+在您的 DSLR 上俄罗斯方块于 DSLR
+唯一适用的俄罗斯方块。
+相机可能会变成 1DX 或可能会爆炸。
+屏幕截图将包含 BMP 和 YUV 覆盖。
+此功能仅适用于 LiveView。
+此功能仅适用于电影模式。
+此功能在 LiveView 中效果最佳。
+这会通过删除所有 CFG 文件来恢复 ML 默认设置。
+这通过降低 ISO 起作用 => 你可能会得到粉红色的高光。
+阈值
+时间指示器时的
+记录时间指示器。
+定时发生器频率（只读）。 FPS = F/timerA/timerB。
+提示：如果真的很暗，还可以启用 FPS 覆盖。
+提示：在照片模式下，它使 LiveView 在黑暗中可用。
+提示：将其设置为 -1 以获得漂亮的晕影效果。
+要更改此设置：Prefs -> Config options
+要开始渐变，请按 INFO 或开始录制。
+Tone Frequency
+Tone Waveform
+Top-Left
+Top-Right
+Translation pat
+Translation patch。
+Trap Focus
+Trigger by
+Trigger level
+Trigger mode
+要生成的波形类型：方波、正弦、白噪声。
+每次拍照时更新叠加层。
+UpsideDown 模式
+通过补偿 ISO 来使用平滑的曝光过渡。
+VBR (QScale)
+Vectorscope
+版本
+非常高
+非常低
+渐渐
+晕晕校正或效果。
+ML 蜂鸣声和 WAV 播放音量 (1-5)。
+WB发出
+警告 如果您的某些设置被错误更改，则警告。
+如果您将图片质量更改为其他内容，则发出警告。
+如果您错误地禁用了 AWB，则发出警告。
+如果您错误地启用了 ALO，则发出警告。
+将模式拨盘转到其他位置时发出警告。
+手动/自动对焦
+警告 警告类型、LED、消息框、蜂鸣
+错误设置的警告
+警告消息
+波形
+当您退出 ML 菜单时，或在相机启动时。
+WhenIdle
+在当前设置下，运动检测仅适用于 LiveView。
+基于 YUV、基于 Luma
+YUV、RGB
+黄色
+您可以在 Paint 中绘制自己的裁剪标记。
+您可以对此进行微调，但不要指望奇迹。
+您可能会得到大约 100000。
+您可以使用 LiveView 按钮来保护或评价图像。
+斑马条纹：显示曝光过度或曝光不足的区域。
+斑马
+零零
+/非常低/低/正常/高/非常高/自动。
+用于检查焦点的缩放框。可以在录音时使用。
+录制时变焦/从对焦环触发/变焦按钮
+Zoom.REC
+Zoom.REC / Focus+ZREC / ZoomIn (+) / Always On。
+放大 (+)
+[照片] 在佳能菜单中将图像质量设置为 RAW。
+打砖块
+bench.mo deflick.mo dual_iso.mo edmac.mo file_man.mo
+
+
+
+
+autoexpo.mo
+英尺/
+lua.mo
+MLT
+mltetris
+mlv_play.mo
+毫米/厘米
+在AF PTOM。 /
+AF
+以外 AWB
+以外 Av
+以外 M
+MF 以外 MF
+以外 关闭
+P
+以外 RAW
+以外 电视
+以外 精细
+pic_view.mo
+仅
+弹出弹出，提示音
+弹出，rep。哔声
+代表弹出
+俄罗斯方块.mo
+
+
