@@ -9,8 +9,7 @@ endif
 
 MODULE_CFLAGS += -D 'FONT_NAME="fixed_10x20"'
 
-$(info Formatting... $(shell clang-format -style=file -i mlt.c mcu.c))
-
+#$(info Formatting... $(shell clang-format -style=file -i mlt.c mcu.c))
 
 # Compile with mcufont
 ifdef MCUFONT
